@@ -1,0 +1,186 @@
+.header {
+    width: 100%;
+    height: 70px;
+    position: fixed; /* Ghim header ở vị trí cố định */
+    top: 0; /* Đặt vị trí ở trên cùng */
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Đảm bảo header nằm trên các phần tử khác */
+    opacity: 0; /* Ban đầu ẩn đi */
+    transform: translateY(-100%); /* Đặt header bên ngoài tầm nhìn */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Hiệu ứng chuyển tiếp */
+
+}
+.header.show {
+    opacity: 1; /* Hiển thị header */
+    transform: translateY(0); /* Hiển thị header ở vị trí bình thường */
+  }
+.header-top {
+    padding: 0px 200px;
+    max-height: 42px;
+}
+.nav__wrapper {
+    padding: 0px 200px;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.nav-right ul li span {
+    margin: 0px 10px
+}
+.container {
+    max-width: 100%;
+}
+.top__nav {
+    background-color: #3F3F3F;
+    color: #FFFFFFCC;
+}
+.button-custom1 {
+    border: 2px solid #FFFFFFCC; /* Màu viền */
+    background-color: transparent; /* Màu nền mặc định */
+    color: #FFFFFF; /* Màu chữ */
+    padding: 5px 15px; /* Padding cho nút */
+    font-size: 14px; /* Kích thước chữ */
+    cursor: pointer; /* Hiển thị con trỏ chuột như kiểu tay */
+    transition: background-color 0.3s, color 0.3s; /* Hiệu ứng chuyển đổi khi hover */
+    border-radius: 6px;
+    font-weight: bolder;
+    line-height: 1.6;
+}
+.button-custom2 {
+    border: 2px solid #FFFFFFCC; /* Màu viền */
+    background-color: transparent; /* Màu nền mặc định */
+    color: #FFFFFF; /* Màu chữ */
+    padding: 5px 15px; /* Padding cho nút */
+    font-size: 14px; /* Kích thước chữ */
+    cursor: pointer; /* Hiển thị con trỏ chuột như kiểu tay */
+    transition: background-color 0.3s, color 0.3s; /* Hiệu ứng chuyển đổi khi hover */
+    border-radius: 6px;
+    font-weight: bolder;
+    line-height: 1.6;
+    margin-left: 18px;
+}
+  
+  .button-custom1:hover {
+    background-color:#b20000    ; /* Màu nền khi hover */
+    color: #FFFFFF; /* Giữ nguyên màu chữ khi hover */
+  }
+  .button-custom2:hover {
+    background-color:#b20000    ; /* Màu nền khi hover */
+    color: #FFFFFF; /* Giữ nguyên màu chữ khi hover */
+  }
+  
+.nav__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: red;
+    width: 100%;
+    color: #fff;
+}
+ul li {
+    cursor: pointer;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    margin-left: 65px;
+}
+.logo img {
+    width: 16.5rem;
+    height: 4.2rem;
+}
+.logo h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-color)
+}
+.menu {
+    display: flex;
+    align-items: center;
+    column-gap: 2.7rem;
+    margin-bottom: 0;
+}
+.nav__item a {
+    color: var(--primary-color);
+    font-weight: 500;
+    cursor: pointer;
+}
+.nav__icons {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+.nav__icons span i {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+.cart__icon, .fav__icon {
+    position: relative;
+}
+.badge {
+    position: absolute;
+    top:25%;
+    right:-10%;
+    width: 15px;
+    height: 15px;
+    content: "";
+    background: black;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    z-index: 1;
+}
+.nav__icons .profile img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.nav__icons .profile {
+    position: relative;
+    z-index: 9;
+}
+
+.nav__icons .profile .profile__actions {
+    position: absolute;
+    top: 100%; /* Đã sửa từ 98% thành 100% */
+    left: -200%;
+    width: 150px;
+    z-index: 999;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: var(--card-bg-01);
+    line-height: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: none;
+}
+
+.nav__icons .profile .profile__actions {
+    display: block;
+}
+.mobile__menu {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+}
+.nav__active {
+    font-weight: 700 !important;
+}
+.sticky_header {
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    box-shadow: 3px 3px 8px -3px #ddd;
+}

@@ -1,0 +1,108 @@
+.form-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+
+  }
+  
+  .user-form {
+    background-image: url('https://vaytieudungicloud.com/wp-content/uploads/2021/02/vay-tien-qua-iphone-1.jpg');
+    background-color: rgba(0, 0, 0, 0.703);
+    padding: 20px;
+    border: 5px solid #ffe91e;
+    width: 400px;
+    position: relative;
+    background-size: cover; /* Ảnh nền bao phủ toàn bộ div */
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 39%;
+    height: 60%; /* Bạn có thể thay đổi chiều cao theo nhu cầu */
+    overflow: hidden; /* Để tránh pseudo-element tràn ra ngoài */
+    z-index: 0;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; 
+  }
+  .user-form.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+  .user-form::before {
+    content: ''; /* Tạo một pseudo-element trước nội dung chính */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000; /* Màu overlay */
+    opacity: 0.7; /* Độ mờ của lớp màu overlay */
+    z-index: -1; /* Đảm bảo lớp phủ nằm trên ảnh nền */
+
+} 
+.user-form form {
+    width: 100%;
+    height: 100%;
+}
+.user-form form h3 {
+    color: #f2d46b;
+    font-size: 1.5rem;
+    margin: 20px;
+}
+.form-group_popup {
+    max-height: 100px;
+  }
+
+.form-group_popup input::placeholder {
+    color: #ccc; 
+    margin-left: 10px;
+    padding: 20px;
+}
+.form-group_popup input {
+    width: 100%; /* Chiều rộng 100% của phần tử cha */
+    height: 35px; /* Chiều cao lớn hơn */
+    padding: 18px 12px; /* Khoảng cách bên trong để input thoải mái hơn */
+    font-size: 18px; /* Phóng to chữ */
+    border-radius: 5px; /* Bo góc input */
+    border: .5px solid #cccccc; /* Đường viền */
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng chiều rộng */
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, .03) !important;
+    margin: 8px 0px;
+}
+.user-form button {
+    width: 100%; /* Chiều rộng 100% của phần tử cha */
+    height: 45px; /* Chiều cao lớn hơn */
+    padding: 10px 15px; /* Khoảng cách bên trong để input thoải mái hơn */
+    font-size: 18px; /* Phóng to chữ */
+    border-radius: 5px; /* Bo góc input */
+    border: 1px solid #ccc; /* Đường viền */
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng chiều rộng */
+    border-radius: 25px;
+    color: red;
+    background-color: white;
+    margin: 7px 0px;
+    font-weight: 600;
+} 
+.is-divider {
+    max-width: 74px;
+    border: 2px solid rgb(242, 212, 107);
+    margin-left: 43%;
+    margin-bottom: 10px;
+}
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 24px;
+    color: white;
+  }

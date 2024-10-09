@@ -1,0 +1,36 @@
+.footer {
+    padding-bottom: 30px;
+    background-image: url(https://camicloud.net/wp-content/uploads/2021/04/footer.jpg);
+    max-height: 233px;
+
+}
+.footer-container {
+    display: flex;
+    justify-content: center;
+}
+.footer__text {
+    line-height: 30px;
+    color: #fff;
+}
+
+.quick__links-title {
+    margin-bottom:20px;
+    color:#fff;
+    font-size: 1.1rem;
+}
+.footer__copyright {
+    color: #FFFFFF80;
+    background-color: #ed0007;
+    text-align: center;
+    padding: 10px 0px 15px;
+    margin-top: 35px;
+    font-size: .9rem;
+}
+.sup-footer {
+    background-color: #ed0007;
+    width: 100%;
+    height: 1px;
+}
+.footer {
+    color: #fff;
+}

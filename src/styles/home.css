@@ -1,0 +1,591 @@
+.hero__section{
+    background-image: url(https://camicloud.net/wp-content/uploads/2021/02/e9a7bab8-78e7-4355-a50c-88512750beaf.jpg);
+    height: 800px;
+    width: 100%;
+}
+.container{
+  padding: 0px;
+} 
+.hero__content h2{
+    font-size: 2.9rem;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.hero__content h3 {
+    font-size: 1.01rem;
+    font-weight: 500;
+}
+.hero__content p {
+    font-size: 1rem;
+    color: var(--primary-color);
+    line-height:28px
+};
+.hero__content, .buy__btn {
+    border: none;
+    outline: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 40px;
+    background: var(--primary-color)
+}
+.hero__content {
+    padding-top: 45px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 50px 19px;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+.customer-form {
+    padding-top: 45px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 50px 19px;
+    color: white;
+    text-align: center;
+    margin-left: 60px;
+    border-radius: 15px;
+}
+.form-group input {
+    width: 100%; /* Chiều rộng 100% của phần tử cha */
+    height: 45px; /* Chiều cao lớn hơn */
+    padding: 10px 15px; /* Khoảng cách bên trong để input thoải mái hơn */
+    font-size: 18px; /* Phóng to chữ */
+    border-radius: 5px; /* Bo góc input */
+    border: 1px solid #ccc; /* Đường viền */
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng chiều rộng */
+    border-radius: 25px;
+    color: white;
+    background-color: rgba(255, 255, 255, .2) !important;
+    margin: 7px 0px;
+}
+.form-group input::placeholder {
+    color: white; 
+    opacity: 1;
+}
+.customer-form button {
+    width: 100%; /* Chiều rộng 100% của phần tử cha */
+    height: 45px; /* Chiều cao lớn hơn */
+    padding: 10px 15px; /* Khoảng cách bên trong để input thoải mái hơn */
+    font-size: 18px; /* Phóng to chữ */
+    border-radius: 5px; /* Bo góc input */
+    border: 1px solid #ccc; /* Đường viền */
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng chiều rộng */
+    border-radius: 25px;
+    color: red;
+    background-color: white;
+    margin: 7px 0px;
+    font-weight: 600;
+}
+.customer-form2 button {
+    width: 100%; /* Chiều rộng 100% của phần tử cha */
+    height: 45px; /* Chiều cao lớn hơn */
+    padding: 10px 15px; /* Khoảng cách bên trong để input thoải mái hơn */
+    font-size: 20px; /* Phóng to chữ */
+    border-radius: 5px; /* Bo góc input */
+    border: 1px solid #ccc; /* Đường viền */
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng chiều rộng */
+    border-radius: 25px;
+    color: red;
+    background-color: white;
+    margin: 7px 0px;
+    font-weight: 600;
+}
+.customer-form button:hover {
+    background-color: #ccc;
+}
+
+.banner-layers {
+    min-height: 720px; /* Điều chỉnh chiều cao tối thiểu tùy theo nhu cầu */
+    text-align: center;
+}
+
+.timer_count {
+    background: var(--primary-color);
+    height: 300px;
+}
+.timer_count img{
+    width: 70% !important;
+    height: 70% !important;
+    object-fit: contain;
+}
+.store__btn {
+    background: #fff;
+    color: var(--primary-color);
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.store__btn a:hover{
+    color: var(--primary-color);
+}
+.text-end {
+    display: flex;
+    justify-content: flex-end;
+}
+.policy {
+    position: relative; /* Để đảm bảo pseudo-element sẽ hiển thị đúng vị trí */
+    background-image: url('https://cdn.tgdd.vn/Files/2020/07/27/1274078/iphone-se-2021-2_800x450.jpg');
+    background-size: cover; /* Ảnh nền bao phủ toàn bộ div */
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%; /* Bạn có thể thay đổi chiều cao theo nhu cầu */
+    overflow: hidden; /* Để tránh pseudo-element tràn ra ngoài */
+}
+
+.policy::before {
+    content: ''; /* Tạo một pseudo-element trước nội dung chính */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4a3229; /* Màu overlay */
+    opacity: 0.90; /* Độ mờ của lớp màu overlay */
+    z-index: 1; /* Đảm bảo lớp phủ nằm trên ảnh nền */
+}
+
+.policy > * {
+    position: relative; /* Đảm bảo nội dung bên trong div vẫn nằm trên lớp overlay */
+    z-index: 2;
+}
+
+
+.policy-content {
+    max-width: 1170px;
+
+}
+.policy-content h3 {
+    color: #d83131;
+    font-weight: bold;
+    font-size: 1.4em;
+    line-height: 1.3;
+    text-align: center;
+    margin: 30px 0px 10px 0px;
+}
+.policy-content p {
+    margin-bottom: 15px;
+    color: white;
+    font-size: 1rem;
+}
+.benefits-content {
+    color: white;
+    margin-bottom: 20px;
+}
+.benefits-text h4 {
+    color:  rgb(215, 209, 47);
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+.benefits {
+    margin-bottom: 20px;
+    
+}
+.policy-content-top {
+    margin-bottom: 70px;
+}
+.icon-inner {
+    border: 2px solid rgb(215, 209, 47);
+    width: 50px; /* Chiều rộng của vòng tròn */
+    height: 50px; /* Chiều cao của vòng tròn */
+    border-radius: 50%; /* Bo tròn để tạo thành hình tròn */
+    display: flex; /* Để canh giữa nội dung */
+    justify-content: center; /* Canh giữa theo chiều ngang */
+    align-items: center; /* Canh giữa theo chiều dọc */
+    background-color: transparent; /* Màu nền ban đầu */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Hiệu ứng chuyển đổi màu khi hover */
+  }
+  
+  .icon-inner:hover {
+    background-color:  rgb(215, 209, 47); /* Màu nền vàng khi hover */
+    color: white; /* Màu chữ khi hover */
+  }
+  
+  svg path {
+    transition: fill 0.3s ease; /* Hiệu ứng đổi màu cho SVG */
+  }
+  
+  .icon-inner:hover svg path {
+    fill: white; /* Đổi màu của SVG path thành trắng khi hover */
+  }
+  
+.procedure {
+    background-image: url(https://cdn-petrotimes.mastercms.vn/stores/news_dataimages/2024/092024/20/20/ngay-68-hang-nam-la-ngay-an-ninh-mang-viet-nam-20240920201110.jpg?rt=20240920201110);
+    position: relative;
+    background-size: cover; /* Ảnh nền bao phủ toàn bộ div */
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 716px;
+    overflow: hidden; /* Để tránh pseudo-element tràn ra ngoài */
+    display: flex;
+    justify-content: center;   
+
+}
+.procedure-content {
+    max-width: 1170px;
+}
+.procedure-content p{
+    color: #000000;
+    font-weight: 400;
+    align-items: flex-start; 
+}
+.procedure::before {
+    content: ''; /* Tạo một pseudo-element trước nội dung chính */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00BFFF; /* Màu overlay */
+    opacity: 0.5; /* Độ mờ của lớp màu overlay */
+    z-index: 1; /* Đảm bảo lớp phủ nằm trên ảnh nền */
+}
+.procedure > * {
+    position: relative; /* Đảm bảo nội dung bên trong div vẫn nằm trên lớp overlay */
+    z-index: 2;
+}
+.procedure h3 {
+    text-align: center;
+    color: #d83131;
+    font-weight: 700;
+    font-size: 1.7rem;
+    margin: 50px 0px;
+}
+.procedure p {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.col-number1 img{
+    width: 50px;
+    height: 50px;
+}
+.col-number2 img{
+    width: 50px;
+    height: 50px;
+}
+.procedure-item__gr1 img {
+    width: 8%;
+    height: 8%;
+    margin-left: 280px;
+}
+.procedure-item__gr2 img {
+    width: 8%;
+    height: 8%;
+    margin-left: 200px;
+}
+.procedure-item__gr3 img {
+    width: 8%;
+    height: 8%;
+    margin-left: 280px;
+}
+.procedure-item__gr1 {
+    display: flex;
+    margin-bottom: 30px;
+}
+.procedure-item__gr1 img{
+    margin-right: 80px;
+}
+.procedure-item__gr1 h4{
+    color: #F70000;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+.procedure-item__gr1 p{
+    color: #020202;
+}
+.procedure-item__gr2 {
+    display: flex;
+    margin-bottom: 30px;
+}
+.procedure-item__gr2 img{
+    margin-right: 80px;
+}
+.procedure-item__gr2 h4{
+    color: #F70000;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+.procedure-item__gr2 p{
+    color: #020202;
+}
+.procedure-item__gr3 {
+    display: flex;
+}
+.procedure-item__gr3 img{
+    margin-right: 80px;
+}
+.procedure-item__gr3 h4{
+    color: #F70000;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+.procedure-item__gr3 p{
+    color: #020202;
+}
+.box-sup {
+    width: 50%;
+}
+.procedure-item {
+    position: relative;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideIn 1s ease-in-out forwards;
+}
+
+/* Keyframes cho hiệu ứng trượt */
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Hiệu ứng trượt lần lượt */
+.procedure-item:nth-child(1) {
+    animation-delay: 0.4s;
+}
+
+.procedure-item:nth-child(2) {
+    animation-delay: 0s; /* Độ trễ 0.5 giây */
+}
+
+.procedure-item:nth-child(3) {
+    animation-delay: 0.2s; /* Độ trễ 1 giây */
+}
+
+
+.benefit {
+    background-image: url(https://vaytieudungicloud.com/wp-content/uploads/2021/04/new.jpg);
+    min-height: 634px;
+    position: relative;
+    background-size: cover; /* Ảnh nền bao phủ toàn bộ div */
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    overflow: hidden; /* Để tránh pseudo-element tràn ra ngoài */
+    display: flex;
+    justify-content: center;
+}
+.benefit::before {
+    content: ''; /* Tạo một pseudo-element trước nội dung chính */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000; /* Màu overlay */
+    opacity: 0.7; /* Độ mờ của lớp màu overlay */
+    z-index: 1; /* Đảm bảo lớp phủ nằm trên ảnh nền */
+
+}
+.benefit-gr {
+    max-width: 1170px;
+}
+.benefit-gr h3{
+    font-weight: 700;
+    color: #d83131;
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 50px 0px;
+} 
+.benefit-gr p {
+    color: rgb(255, 255, 255);
+    margin-bottom: 1.3rem;
+    font-weight: 400;
+}
+.number-gr {
+    margin-bottom: 30px ;
+    margin-top: 30px;
+}
+.number-gr img {
+    width: 80px;
+    height: 60px;
+}
+.number-gr span {
+    color: rgb(251, 241, 1);
+    font-size: 1rem;
+    padding: 0px 0px 20px 20px;
+
+}
+.benefit > * {
+    position: relative; /* Đảm bảo nội dung bên trong div vẫn nằm trên lớp overlay */
+    z-index: 2;
+}
+.number-gr {
+    display: flex;
+}
+.register {
+    background-image: url(https://vaytieudungicloud.com/wp-content/uploads/2021/04/dk.jpg);
+    min-height: 515px;
+    position: relative;
+    background-size: cover; /* Ảnh nền bao phủ toàn bộ div */
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    overflow: hidden; /* Để tránh pseudo-element tràn ra ngoài */
+    display: flex;
+    justify-content: center;
+}
+.register::before {
+    content: ''; /* Tạo một pseudo-element trước nội dung chính */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000; /* Màu overlay */
+    opacity: 0.7; /* Độ mờ của lớp màu overlay */
+    z-index: 1; /* Đảm bảo lớp phủ nằm trên ảnh nền */
+
+}
+.register > * {
+    position: relative; /* Đảm bảo nội dung bên trong div vẫn nằm trên lớp overlay */
+    z-index: 2;
+}
+.register-gr {
+    max-width: 1170px;
+}
+.register-gr h2 {
+    color: #ed1c24;
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+.register-gr h3 {
+    color: #fdf201;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.register-gr p {
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+}
+.register-gr span{
+    color: #ed1c24
+}
+.customer-form2 {
+    margin-left: 20px;
+}
+.cskv {
+    background-image: url(https://vaytieudungicloud.com/wp-content/uploads/2021/04/new.jpg);
+    min-height: 574px;
+    position: relative;
+    background-size: cover; /* Ảnh nền bao phủ toàn bộ div */
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    overflow: hidden; /* Để tránh pseudo-element tràn ra ngoài */
+    display: flex;
+    justify-content: center;
+}
+.cskv::before {
+    content: ''; /* Tạo một pseudo-element trước nội dung chính */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000; /* Màu overlay */
+    opacity: 0.7; /* Độ mờ của lớp màu overlay */
+    z-index: 1; /* Đảm bảo lớp phủ nằm trên ảnh nền */
+
+}
+.cskv > * {
+    position: relative; /* Đảm bảo nội dung bên trong div vẫn nằm trên lớp overlay */
+    z-index: 2;
+}
+.cskv-gr {
+    max-width: 1170px;
+}
+.cskv-gr h3 {
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    color: #ed1c24;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.list-container {
+    display: flex;
+    flex-wrap: wrap;
+    color: #f1f1f1;
+    margin-bottom: 50px;
+  }
+
+.list-container li {
+    flex: 1 0 50%;
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+.cskv-gr p {
+    color: #f1f1f1
+}
+.section-title {
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    margin: 50px 0px;
+}
+.section-title b {
+    display: inline-block;
+    width: 470px; /* Độ dài của vạch kẻ */
+    height: 0.5px; /* Độ dày của vạch kẻ */
+    background-color: #f1f1f1;  /* Màu sắc của vạch kẻ */
+    margin: 0 10px; /* Khoảng cách giữa vạch kẻ và chữ */
+    flex-grow: 1;
+    vertical-align: middle;
+}
+/* Hiệu ứng trượt từ trái */
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Hiệu ứng trượt từ phải */
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Áp dụng hiệu ứng cho col-number1 */
+  .col-number1 {
+    animation: slideInFromLeft 1.5s ease-out forwards;
+  }
+  
+  /* Áp dụng hiệu ứng cho col-number2 */
+  .col-number2 {
+    animation: slideInFromRight 1.5s ease-out forwards;
+  }
+  .benefits-content {
+    animation: slideInFromRight 1.5s ease-out forwards;
+  }
+
+  
