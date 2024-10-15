@@ -21,7 +21,7 @@ const Home = () => {
     phone: "",
     address: "",
     iphone: "",
-    loanAmount: 0,
+    loanAmount: "",
 });
 
 const [register, { isLoading, isSuccess, isError }] = useRegisterMutation();
@@ -43,7 +43,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
             phone: "",
             address: "",
             iphone: "",
-            loanAmount: 0,
+            loanAmount: "",
         }); // Reset form sau khi thành công
     } catch (err) {
         console.error("Failed to register:", err);
@@ -87,7 +87,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    placeholder="Số điện thoại"
+                    placeholder="Số điện thoại liên hệ"
                     required
                 />
             </div>
@@ -98,7 +98,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
                     name="address"
                     value={formData.address}
                     onChange={handleChange}
-                    placeholder="Địa chỉ"
+                    placeholder="Địa chỉ đang sinh sống"
                     required
                 />
             </div>
@@ -109,7 +109,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
                     name="iphone"
                     value={formData.iphone}
                     onChange={handleChange}
-                    placeholder="Dòng iPhone"
+                    placeholder="Dòng iPhone muốn vay"
                     required
                 />
             </div>
@@ -120,14 +120,14 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
                     name="loanAmount"
                     value={formData.loanAmount}
                     onChange={handleChange}
-                    placeholder="Số tiền vay"
+                    placeholder="Số tiền cần vay"
                     required
                 />
             </div>
-            <Button type="primary" htmlType="submit" loading={isLoading}>
+            <button type="submit" >
                 Gửi Thông Tin
-            </Button>
-            {isSuccess && <Alert message="Đăng ký thành công!" type="success" />}
+            </button>
+            {isSuccess && <Alert message="Chúng tôi đã nhận được đăng ký khoản vay của bạn. Vui lòng chờ xét duyệt." type="success" />}
             {isError && <Alert message="Đăng ký thất bại!" type="error" />}
         </form>
 
@@ -390,7 +390,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
           vay, việc còn lại nhân viên giao dịch sẽ có trách nhiệm tư vấn và hoàn
           tất thủ tục vay tiền vay qua icloud iphone cho bạn.
         </p>
-        <div className="d-flex ">
+        <div className="d-flex benefit-content">
           <div className="col-number1 col-md-6">
             <div className="number-gr">
               <img src={number1} alt="" />
@@ -517,10 +517,10 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
                     required
                 />
             </div>
-            <Button type="primary" htmlType="submit" loading={isLoading}>
+            <button type="submit" >
                 Gửi Thông Tin
-            </Button>
-            {isSuccess && <Alert message="Đăng ký thành công!" type="success" />}
+            </button>
+            {isSuccess && <Alert message="Chúng tôi đã nhận được đăng ký khoản vay của bạn. Vui lòng chờ xét duyệt." type="success" />}
             {isError && <Alert message="Đăng ký thất bại!" type="error" />}
         </form>
               </div>

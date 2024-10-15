@@ -4,6 +4,7 @@ import {useGetAllUserQuery, useRemoveUserMutation} from "../../api/auth"; // Mak
 import "../../styles/button.css";
 import "../../index.css";
 import { useState } from "react";
+import * as XLSX from 'xlsx';  // Import thư viện xlsx
 type UserData = {
     _id: string;
     username: string;
@@ -27,6 +28,17 @@ const AdminUser = () => {
                 console.error("Error deleting user:", error);
             });
     };
+
+    // Hàm xuất dữ liệu ra Excel
+  const exportToExcel = () => {
+    // Chuyển đổi dữ liệu từ userList thành dạng mà Excel có thể đọc
+    const worksheet = XLSX.utils.json_to_sheet(userList);
+    const workbook = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(workbook, worksheet, "Users");
+    
+    // Xuất file
+    XLSX.writeFile(workbook, "user_list.xlsx");
+  };
 
     const dataSource = userList?.map(({ _id, username, phone, address, iphone, loanAmount }:any) => ({
         key:_id,
@@ -81,6 +93,7 @@ const AdminUser = () => {
         <div>
             <header className="mb-4 d-flex justify-content-between align-items-center">
                 <h2 className="font-weight-bold text-2xl">User Manager</h2>
+                <Button type="dashed" onClick={exportToExcel}>Export to Excel</Button>
             </header>
             {isRemoveSuccess && <Alert message="Success Text" type="success" />}
             {isLoading ? <Skeleton /> : <Table dataSource={dataSource} columns={columns} />}

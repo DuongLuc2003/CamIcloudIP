@@ -1,10 +1,13 @@
 {
+  "homepage": "https://duongluc2003.github.io/camIcloudIP",
   "name": "main",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "concurrently vite \"json-server-auth db.json --watch\"",
+    "predeploy": "pnpm run build",
+    "deploy": "gh-pages -d dist",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
@@ -48,11 +51,13 @@
     "remixicon": "^3.5.0",
     "tailwindcss": "^3.3.3",
     "vite": "^4.4.7",
-    "vite-tsconfig-paths": "^4.2.0"
+    "vite-tsconfig-paths": "^4.2.0",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.0.3",
     "concurrently": "^8.2.0",
+    "gh-pages": "^6.1.1",
     "typescript": "^5.1.6"
   }
 }

@@ -34,3 +34,30 @@
 .footer {
     color: #fff;
 }
+  /* Responsive cho màn hình tablet và mobile (dưới 1024px) */
+  @media (max-width: 1024px) {
+    .footer {
+        max-height: 100%;
+        padding: 0;
+    }
+    .footer-content {
+        display: block;
+    }
+    .col-lg-3 {
+        width: 94%;
+        padding: 0px 30px;
+        margin-bottom: 20px;
+    }
+    .footer-container {
+        display: block;
+        justify-content: center;
+    }
+     .footer__copyright {
+        margin-top: 20px;
+        width: 100%;
+     }
+     .quick__links-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+     }
+  }

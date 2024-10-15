@@ -1,15 +1,23 @@
 .header {
     width: 100%;
     height: 70px;
-    position: fixed; /* Ghim header ở vị trí cố định */
+    position: relative; /* Ghim header ở vị trí cố định */
     top: 0; /* Đặt vị trí ở trên cùng */
     left: 0;
     right: 0;
-    z-index: 1000; /* Đảm bảo header nằm trên các phần tử khác */
-    opacity: 0; /* Ban đầu ẩn đi */
-    transform: translateY(-100%); /* Đặt header bên ngoài tầm nhìn */
+    z-index: 1000; 
     transition: opacity 0.5s ease, transform 0.5s ease; /* Hiệu ứng chuyển tiếp */
 
+}
+.sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: #fff; /* Bạn có thể tùy chỉnh màu nền */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+  transition: transform 0.3s ease-in-out; /* Hiệu ứng cuộn mượt */
 }
 .header.show {
     opacity: 1; /* Hiển thị header */
@@ -23,6 +31,7 @@
     padding: 0px 200px;
     font-weight: 700;
     font-size: 1rem;
+    height: 70px;
 }
 .nav-right ul li span {
     margin: 0px 10px
@@ -184,3 +193,215 @@ ul li {
     z-index: 1;
     box-shadow: 3px 3px 8px -3px #ddd;
 }
+
+/* Responsive cho màn hình laptop (từ 1024px trở lên) */
+@media (min-width: 1024px) {
+    .header-top {
+      padding: 0px 100px;
+      max-height: 42px;
+    }
+    
+    .nav__wrapper {
+      padding: 0px 100px;
+      height: 70px;
+    }
+    
+    .logo img {
+      width: 14rem;
+      height: 3.5rem;
+    }
+    
+    .nav__icons span i {
+      font-size: 1.2rem;
+    }
+  
+    .button-custom1, .button-custom2 {
+      padding: 4px 12px;
+      font-size: 13px;
+    }
+    .button-register {
+      display: none;
+    }
+    .menu_icon {
+      display: none;
+    }
+    .menu {
+      display: none;
+    }
+  }
+  
+  /* Responsive cho màn hình tablet và mobile (dưới 1024px) */
+  @media (max-width: 1024px) {
+    .header-top {
+      padding: 0px 50px;
+      max-height: 42px;
+      display: block !important; /* Chuyển từ flex sang block */
+    }
+    .header-left {
+      display: none !important;
+    }
+    .button-custom2 {
+      display: none !important;     
+    }
+    .navigation ul {
+      display: none !important;
+    }
+    .navigation button {
+      font-size: .8rem;
+    }
+    .button-register {
+      display: block !important;
+      border: none;
+      padding: 0px;
+      font-size: 1.5rem;
+      margin-right: 50px;
+    }
+    .header-right {
+      display: flex;
+      justify-content: center; /* Căn giữa button-custom1 */
+      align-items: center;
+      width: 100%; /* Căn chỉnh toàn bộ chiều ngang */
+      height: 100%; /* Căn chỉnh theo chiều dọc */
+    }
+    .nav__wrapper {
+      padding: 0px 50px;
+      height: 70px;
+    }
+    .nav-right ul {
+      display: none !important;
+    }
+    .logo {
+      margin-left: 0;
+    }
+    .logo img {
+      width: 17rem;
+      height: 4.2rem;
+      margin-right: 50px;
+    }
+    .menu_icon {
+      font-size: 1.7rem;
+      cursor: pointer;
+      margin-left: 30px;
+    }
+    .menu_icon:hover {
+      color: #ddd;
+    }
+    .nav__icons {
+      column-gap: 0.5rem;
+    }
+    .button-custom1, .button-custom2 {
+      padding: 4px 10px;
+      font-size: 12px;
+    }
+/* Mặc định icon menu */
+.menu_icon {
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1100; /* Đảm bảo icon nằm trên cùng */
+}
+
+/* Overlay của menu (background mờ) */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 85%;
+  background-color: #ed1c24 !important;
+  background-image: url(https://camicloud.com/wp-content/uploads/2021/02/bg2.svg);
+  background-size: cover; /* Ảnh nền bao phủ toàn bộ div */
+  z-index: 1000; /* Đảm bảo overlay nằm trên các phần tử khác */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 50%; /* Đặt nó ở giữa theo chiều ngang */
+  transform: translateX(-50%); /* Dịch chuyển phần tử về chính giữa */ 
+}
+
+/* Danh sách ul bên trong menu */
+.menu-overlay ul{
+  display: block !important;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  margin-top: 30px;
+}
+.menu-list {
+  height: 100vh;
+}
+.menu-list li {
+  text-align: center;
+  padding: 15px 30px;
+}
+.menu-list li:hover {
+  background-color: #ce040ab8;
+}
+
+.menu-list li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 400;
+
+
+}
+
+/* Icon đóng menu */
+.close_icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #fff;
+}
+  }
+  
+  /* Responsive cho màn hình điện thoại (từ 768px trở xuống) */
+  @media (max-width: 768px) {
+    .header-top {
+      padding: 0px 20px;
+      max-height: 42px;
+    }
+  
+    .nav__wrapper {
+      padding: 0px 20px;
+      height: 70px;
+    }
+  
+    .logo img {
+      width: 17rem;
+      height: 4.2rem;
+      margin-right: 50px;
+    }
+  
+    .nav__icons {
+      display: none;
+    }
+  
+    .mobile__menu {
+      font-size: 2rem;
+      color: #fff;
+      cursor: pointer;
+    }
+  
+    /* Menu mobile full màn hình */
+    .mobile__menu.active + .menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+      background-color: #3F3F3F;
+    }
+  
+    .menu .nav__item {
+      margin-bottom: 20px;
+    }
+  
+    .menu .nav__item a {
+      font-size: 1.5rem;
+    }
+  }
+  

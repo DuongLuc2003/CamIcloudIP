@@ -587,5 +587,100 @@
   .benefits-content {
     animation: slideInFromRight 1.5s ease-out forwards;
   }
+  /* Responsive cho màn hình laptop (từ 1024px trở lên) */
+@media (min-width: 1024px) {
+}
+  /* Responsive cho màn hình tablet và mobile (dưới 1024px) */
+  @media (max-width: 1024px) {
+    .hero__section {
+        display: none !important;
+    }
+    .policy {
+        margin-top: 40px;
+        padding: 0px 15px;
+    }
+    .policy-content-top h3{
+        font-size: 1.6rem;
+    }
+    .policy-content-top p {
+        font-size: 1.2rem;
+    }
+    .benefits-text h4 {
+        font-weight: bolder;
+    }
+    .benefits-text span {
+        font-size: 1rem;
+    }
+    .benefits-text {
+        text-align: justify;
+    }
+    .procedure {
+        padding: 0px 20px;
+    }
+    .procedure-content p{
+        text-align: justify;
+    }
+    .benefit {
+        padding: 0px 20px;
+    }
+    .benefit-gr p{
+        font-size: 1.1rem;
+    }
+    .col-number1 {
+        padding: 0px 10px;
+    }
+    .col-number2 {
+        padding: 0px 10px;
+    }
+    .number-gr {
+        text-align: justify;
+    }
+    .register {
+        padding: 0px 20px;
+    }
+    .register-col__1 p {
+        text-align: justify;
+    }
+    .cskv {
+        padding: 0px 20px;
+    }
+    .cskv-gr p {
+        text-align: justify;
+    }
+    .section-title b {
+    width: 0px;
+    }
+  }
+    /* Responsive cho màn hình điện thoại (từ 768px trở xuống) */
+    @media (max-width: 768px) {
+        .customer-form {
+            display:  block !important;
+        }
+        .procedure-item__gr1 {
+            margin-bottom: 0px;
+        }
+        .procedure-item__gr1 img {
+            margin-left: 30px;
+        }
+        .procedure-item__gr2 img {
+            margin-left: 30px;
+        }
+        .procedure-item__gr3 img {
+            margin-left: 30px;
+        }
+        .benefit-content {
+            display: block !important;
+        }
+        .register-col {
+            display: block !important;
+        }
+        .register-col__2 {
+            margin: 30px 0px;
+            margin-right: 20px;
+        }
+        .list-container {
+            display: block !important;
+        }
+    }
 
   

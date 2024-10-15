@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="footer qt-9">
       <Container className="footer-container">
         <Row className="footer-container">
-          <Col lg="3">
+          <Col lg="3" className="footer-content">
             <div className="logo">
               <h1 className="text-white mb-4">Về chúng tôi</h1>
             </div>
@@ -19,7 +19,7 @@ const Footer = () => {
               đầu tư tài chính, cho vay tiền online.
             </p>
           </Col>
-          <Col lg="3">
+          <Col lg="3" className="footer-content">
             <div className="footer__quick-links">
               <h4 className="quick__links-title">Liên hệ</h4>
               <ListGroup>
@@ -35,7 +35,7 @@ const Footer = () => {
               </ListGroup>
             </div>
           </Col>
-          <Col lg="3">
+          <Col lg="3" className="footer-content">
             <div className="footer__quick-links">
               <h4 className="quick__links-title">Cầm Icloud bằng Iphone – Tiện lợi</h4>
               <ListGroup>
