@@ -9,7 +9,7 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 const Header = () => {
   const headerRef = useRef<HTMLFormElement | null>(null);
   const [showForm, setShowForm] = useState(false);
-  const [showHeader, setShowHeader] = useState(false);
+  const [showHeader] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false); // State để theo dõi trạng thái menu
   const [isSticky, setIsSticky] = useState(false);
   // Function hiển thị form khi click nút "Đăng ký vay"

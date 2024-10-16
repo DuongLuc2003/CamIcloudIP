@@ -11,7 +11,7 @@ import number6 from "../assets/images/number6.png";
 import imglocation1 from "../assets/images/01.png";
 import imglocation2 from "../assets/images/02.png";
 import imglocation3 from "../assets/images/03.png";
-import { Alert, Button } from "antd";
+import { Alert } from "antd";
 
 // import serviceIcon1 from "../assets/images/"
 const Home = () => {
@@ -24,7 +24,7 @@ const Home = () => {
     loanAmount: "",
 });
 
-const [register, { isLoading, isSuccess, isError }] = useRegisterMutation();
+const [register, { isSuccess, isError }] = useRegisterMutation();
 
 const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;

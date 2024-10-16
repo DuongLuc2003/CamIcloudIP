@@ -9,7 +9,7 @@ interface AuthRegister {
     phone: string;
     address: string;
     iphone: string;
-    loanAmount:number;
+    loanAmount:string;
 }
 const authApi = createApi({
     reducerPath: 'auth',
