@@ -4,7 +4,7 @@
     width: 100%;
 }
 .container{
-  padding: 0px;
+   padding: 0px;
 } 
 .hero__content h2{
     font-size: 2.9rem;
@@ -367,7 +367,7 @@
 
 
 .benefit {
-    background-image: url(https://vaytieudungicloud.com/wp-content/uploads/2021/04/new.jpg);
+    background-image: url(https://cellphones.com.vn/sforum/wp-content/uploads/2023/03/vay-tien-qua-icloud-5.jpg);
     min-height: 634px;
     position: relative;
     background-size: cover; /* Ảnh nền bao phủ toàn bộ div */
@@ -427,7 +427,7 @@
     display: flex;
 }
 .register {
-    background-image: url(https://vaytieudungicloud.com/wp-content/uploads/2021/04/dk.jpg);
+    background-image: url(https://cdn-images.vtv.vn/thumb_w/650/66349b6076cb4dee98746cf1/2024/06/24/icloud-69226111919338043350892-05559603822260045355119.jpg);
     min-height: 515px;
     position: relative;
     background-size: cover; /* Ảnh nền bao phủ toàn bộ div */
@@ -482,7 +482,7 @@
     margin-left: 20px;
 }
 .cskv {
-    background-image: url(https://vaytieudungicloud.com/wp-content/uploads/2021/04/new.jpg);
+    background-image: url(https://cellphones.com.vn/sforum/wp-content/uploads/2023/03/vay-tien-qua-icloud-4.jpg);
     min-height: 574px;
     position: relative;
     background-size: cover; /* Ảnh nền bao phủ toàn bộ div */
@@ -660,13 +660,35 @@
             margin-bottom: 0px;
         }
         .procedure-item__gr1 img {
-            margin-left: 30px;
+           margin: 0px 10px;
+           width: 15%;
+        }
+        .procedure-item__gr1 h4{
+            color: #F70000;
+            font-weight: 500;
+            font-size: 1.2rem;
+        }
+        .procedure-item__gr1 p{
+            margin-bottom: 5px;
         }
         .procedure-item__gr2 img {
-            margin-left: 30px;
+            margin:0px 10px;
+            width: 15%;
+        }
+        .procedure-item__gr2 h4{
+            color: #F70000;
+            font-weight: 500;
+            font-size: 1.2rem;
+        }
+        .procedure-item__gr2 p{
+            margin-bottom: 5px;
         }
         .procedure-item__gr3 img {
-            margin-left: 30px;
+            margin:0px 10px;
+            width: 15%;
+        }
+        .procedure-item__gr3 p{
+            margin-bottom: 5px;
         }
         .benefit-content {
             display: block !important;
@@ -680,6 +702,24 @@
         }
         .list-container {
             display: block !important;
+        }
+        .hero__section {
+            width: 100%;
+        }
+        .procedure {
+            height: 930px;  
+        }
+        .procedure-item {
+
+        }
+        .procedure-item__gr1 {
+           
+        }
+        .procedure-item__gr2 {
+
+        }
+        .procedure-item__gr3 {
+
         }
     }
 

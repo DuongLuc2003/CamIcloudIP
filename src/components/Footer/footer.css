@@ -1,12 +1,13 @@
 .footer {
     padding-bottom: 30px;
     background-image: url(https://camicloud.net/wp-content/uploads/2021/04/footer.jpg);
-    max-height: 233px;
+    max-height: 255px;
 
 }
 .footer-container {
     display: flex;
     justify-content: center;
+    bottom: 0px;
 }
 .footer__text {
     line-height: 30px;
@@ -23,8 +24,8 @@
     background-color: #ed0007;
     text-align: center;
     padding: 10px 0px 15px;
-    margin-top: 35px;
     font-size: .9rem;
+    margin-top: 10px;
 }
 .sup-footer {
     background-color: #ed0007;

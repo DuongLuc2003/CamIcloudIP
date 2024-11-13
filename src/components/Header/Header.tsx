@@ -81,7 +81,7 @@ useEffect(() => {
   return (
     <header className={`header ${showHeader ? 'show' : ''}`} ref={headerRef}>
       <Container className='container'>
-        <Row>
+        <div>
           <div className="header-top d-flex flex-row justify-content-between align-items-center top__nav" style={{ height: '100px' }}>
             <div className="d-flex align-items-center header-left">
               <div className="d-flex justify-content-center align-items-center" style={{ height: '100%' }}>
@@ -96,8 +96,8 @@ useEffect(() => {
               <button className="button-custom2" onClick={handleShowForm}>ĐĂNG KÝ NGAY</button>
             </div>
           </div>
-        </Row>
-        <Row>
+        </div>
+        <div>
           <div  className={`nav__wrapper ${isSticky ? 'sticky-header' : ''}`}>
             <div className='navigation'>
             <ul className="d-flex ">
@@ -141,7 +141,7 @@ useEffect(() => {
     </div>
             </div>
           </div>
-        </Row>
+        </div>
       </Container>
       {/* Hiển thị form khi showForm = true */}
       {showForm && <UserForm onClose={handleCloseForm} />}

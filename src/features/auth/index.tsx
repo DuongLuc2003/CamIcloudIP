@@ -1,7 +1,6 @@
 import React from "react";
 import { Button, Skeleton, Popconfirm, Alert, Table } from "antd";
 import {useGetAllUserQuery, useRemoveUserMutation} from "../../api/auth"; // Make sure to import the appropriate queries and mutations
-import "../../styles/button.css";
 import "../../index.css";
 import { useState } from "react";
 import * as XLSX from 'xlsx';  // Import thư viện xlsx

@@ -6,8 +6,8 @@ const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <footer className="footer qt-9">
-      <Container className="footer-container">
-        <Row className="footer-container">
+      <Container className="">
+        <div className="footer-container">
           <Col lg="3" className="footer-content">
             <div className="logo">
               <h1 className="text-white mb-4">Về chúng tôi</h1>
@@ -58,12 +58,13 @@ const Footer = () => {
             </div>
           </Col>
 
-          <Col lg="12" >
+         
+        </div>
+        <Col lg="12" >
             <p className="footer__copyright">
               Coppyright {year} © Cầm Icloud
             </p>
           </Col>
-        </Row>
       </Container>
     </footer>
   );

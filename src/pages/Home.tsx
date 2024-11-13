@@ -53,7 +53,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     <div className="container">
       <section className="hero__section">
         <Container className="bannergr">
-          <Row className="banner-layers justify-content-center align-items-center">
+          <div className="banner-layers justify-content-center align-items-center d-flex">
             <Col lg="5" md="6">
               <div className="hero__content">
                 <h2>Ưu Điểm tuyệt vời</h2>
@@ -134,7 +134,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 
               </div>
             </Col>
-          </Row>
+          </div>
         </Container>
       </section>
       <section className="policy d-flex justify-content-center section" id="gioi-thieu">

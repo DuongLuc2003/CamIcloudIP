@@ -228,6 +228,9 @@ ul li {
     .menu {
       display: none;
     }
+    .button-custom2 {
+      margin-left: 0px;
+  }
   }
   
   /* Responsive cho màn hình tablet và mobile (dưới 1024px) */
@@ -355,6 +358,9 @@ ul li {
   cursor: pointer;
   color: #fff;
 }
+.button-custom2 {
+  margin-left: 0px;
+}
   }
   
   /* Responsive cho màn hình điện thoại (từ 768px trở xuống) */
@@ -403,5 +409,8 @@ ul li {
     .menu .nav__item a {
       font-size: 1.5rem;
     }
+    .button-custom2 {
+      margin-left: 0px;
+  }
   }
   
