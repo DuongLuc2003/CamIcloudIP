@@ -27,12 +27,12 @@ const LayoutAdmin = () => {
                         {
                             key: "1",
                             icon: <AiOutlineMenuUnfold/>,
-                            label: <Link to="/camIcloudIP/admin/dashboard">Thông kê</Link>,
+                            label: <Link to="/admin/dashboard">Thông kê</Link>,
                         },
                         {
                             key: "3",
                             icon: <AiOutlineUser/>,
-                            label: <Link to="/camIcloudIP/admin/user">User</Link>,
+                            label: <Link to="/admin/user">User</Link>,
                         },
 
                     ]}
