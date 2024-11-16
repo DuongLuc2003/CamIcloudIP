@@ -32,10 +32,8 @@ useEffect(() => {
           <GrClose onClick={onClose} className="close-icon"/>
         </div>
       <div className="user-form" ref={formRef} onClick={handleClickInside}>
-
         <form>
             <h3 className="fw-bolder text-center">ĐĂNG KÝ NGAY</h3>
-            <div className="sup"><div className="is-divider divider clearfix"></div></div>
           <div className="form-group_popup">
             <input
               type="text"

@@ -76,6 +76,7 @@
     border-radius: 25px;
     background-color: rgba(0, 0, 0, .03) !important;
     margin: 8px 0px;
+    color: white;
 }
 .user-form button {
     width: 100%; /* Chiều rộng 100% của phần tử cha */
