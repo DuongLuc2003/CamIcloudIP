@@ -14,7 +14,7 @@ interface AuthRegister {
 const authApi = createApi({
     reducerPath: 'auth',
     baseQuery: fetchBaseQuery({
-        baseUrl:'http://localhost:8080',
+        baseUrl:'https://sv-icloudip-production.up.railway.app',
     }),
     endpoints: (builder) => ({
         register: builder.mutation<ApiResponse, AuthRegister>({
